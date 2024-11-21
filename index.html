@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damdamag Karruba</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/time.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.9/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header bg-primary text-white text-center py-5 position-relative">
+        <div class="container">
+            <h1 class="display-4 animated-heading">DAMDAMAG KARRUBA</h1>
+            <p class="lead">Umaykan makidamag kadagiti mapaspasamak dituy lubong</p>
+        </div>
+    </header>
+
+    <!-- Current Date and Time -->
+    <div id="current-time" class="text-center py-3">
+        <!-- The current time and date will appear here -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Damdamag</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Pannakabalay</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">Baro nga Damdamag</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#editorials">Editoryal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://media.philstar.com/photos/2024/11/20/untitled-design_2024-11-20_22-01-52.jpg"
+                        class="d-block w-100" alt="Philippine Landscape">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://od2-image-api.abs-cbn.com/prod/editorImage/173209243803820241117-pepito-caramoran-FET8.jpg"
+                        class="d-block w-100" alt="Breaking News">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.philstar.com/photos/2024/11/20/bini-1_2024-11-20_20-15-26.jpg"
+                        class="d-block w-100" alt="Philippine Culture">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Baro nga Damdamag</h2>
+            <div class="row g-4">
+                <!-- News Post 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow hover-zoom">
+                        <img src="https://news-image-api.abs-cbn.com/Prod/editorImage/1731836873819467344100_996124632559190_2253092487286044204_n.jpg"
+                            class="card-img-top" alt="Typhoon Update">
+                        <div class="card-body">
+                            <h5 class="card-title">Bagyo Alerto: Damdamag ti PAGASA</h5>
+                            <p class="card-text">
+                                Ti napigsa a bagyo ket nalpasen ken naitama iti amianan nga Luzon.
+                                Dagiti residente ket agpasalamat nga nasayangkat dagiti sagsagana ken naisalakniban iti
+                                dakdakkel a peligro.</p>
+                            <a href="news/typhoon-alert.html" class="btn btn-primary">Kitaen Pay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Post 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow hover-zoom">
+                        <img src="https://www.adb.org/sites/default/files/styles/content_media/public/content-media/108896-philippines-01.png?itok=-E9AfMks"
+                            class="card-img-top" alt="Economic Growth">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Umuneg ti Ekonomiya ti Pilipinas</h5>
+                            <p class="card-text">Ti GDP ket ngimmato iti 6.3 a porsyento iti daytoy a quarter, a
+                                napapigsaan gapu iti panagrekober ti turismo
+                                ken ti kinadumeg ti panagbalin ti pondo iti dagiti proyekto iti infrastruktura.</p>
+                            <a href="news/economic-growth.html" class="btn btn-primary">Amwen Pay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Post 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow hover-zoom">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeqHVu4_k941a1_gIuLxe8YjvcLMTl7ZnXw&s"
+                            class="card-img-top" alt="Local Election">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                2024 Eleksiyon ti Barangay</h5>
+                            <p class="card-text">Ti sumaruno a eleksiyon ket mangipakita iti baro a rupa a mangted
+                                kadagiti posision a mangidaulo.
+                                Adda kadagitoy ti masapul nga amuen yo maipanggep kadagiti kandidato.</p>
+                            <a href="news/barangay-elections.html" class="btn btn-primary">Agbasa Pay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Editorials Section -->
+    <section id="editorials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Editoryal</h2>
+            <div class="row g-4">
+                <!-- Editorial 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow hover-zoom">
+                        <div class="card-body">
+                            <h5 class="card-title">Opinyon: Ti Aksyon ti Klima Ket Iti Ita</h5>
+                            <p class="card-text" id="editorial1-description">Ti Pilipinas ket agpaadu ti risgo gapu iti
+                                panagbalbaliw ti klima. Oras a para kadagiti mangipangulu a mangted ti mas namaymayat a
+                                patakaran. <span id="editorial1-full-text" class="d-none">Ti pagilian, a nakapaset iti
+                                    Pacific Ring of Fire ken addaan iti dalan dagiti bagyo, ket nabayag a maapektaran
+                                    iti natural a kalamidad. Saan laeng a dagiti extreme a tiempo a kas kadagiti ulan
+                                    ken bagyo, no di ket agtultuloy a panagngato ti lebel ti baybay ken agnanayon a
+                                    parikut iti agdama a kapigpigsaan. Masapul a kararag ti mangipangulu tapno
+                                    makapagpatpatibker iti nasayaat a patakaran ken estratehiya tapno maliklikan ti
+                                    epekto ti panagbalbaliw ti klima ken maproteheran ti masakbayan ti pagilian.</span>
+                            </p>
+                            <button class="btn btn-warning" onclick="toggleDescription('editorial1')">Basaen Ti
+                                Adu</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Editorial 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow hover-zoom">
+                        <div class="card-body">
+                            <h5 class="card-title">Analisis: Panangibangon ti Relasion iti Tinda</h5>
+                            <p class="card-text" id="editorial2-description">Kas iti panangipaado ti relasyon ti
+                                Pilipinas kadagiti China ken US, ania ti kayat na a saw-en daytoy para iti masakbayan ti
+                                pagilian iti kalakalan. <span id="editorial2-full-text" class="d-none">Dagitoy a
+                                    panagbalbaliw ket mabalin nga agbalin a naindaklan a paglintegan iti masakbayan ti
+                                    Pilipinas iti global a merkado.
+
+                                    Malaksid iti panangpasayaat ti dagiti kasapulan a kasunduan iti kalakalan, ti
+                                    Pilipinas ket agtultuloy iti panag-invest iti dagiti proyekto iti infrastruktura a
+                                    mangted ti pondo iti lokal a ekonomiya. Babaen ti agtultuloy a panagsagrap iti
+                                    konektividad ken panangpasayaat iti sustinable a panagdur-as, ti gobyerno ket
+                                    agtarigagay a mangisigurado ti naurnos a panagbalbaliw ken stabilidad para iti tao.
+
+                                    Kas ti Pilipinas ket agtultuloy a mangpasingked iti global a presensiya, napateg a
+                                    para kadagiti mangipangulu ti mangpatawid ti diplomatikong pagsasao, mangpakaammo
+                                    iti bukod a dayalogo, ken mangted ti kasiguraduhan a dagiti interes ti pagilian ket
+                                    agtalinaed a maisalimetmet.</span></p>
+                            <button class="btn btn-warning" onclick="toggleDescription('editorial2')">Basaen Ti
+                                Adu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Video Section -->
+    <section id="youtube-video" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Buyaen</h2>
+            <!-- Embed YouTube Video 1 -->
+            <div class="mb-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NGZAXqAHW0g?si=5Zckswr4R20XW3vu"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- Embed YouTube Video 2 -->
+            <div class="mb-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8elQNSRPla0?si=V_SWvnTo0WaP6O3m"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- Embed YouTube Video 3 -->
+            <div class="mb-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0YPyXLewi5g?si=5OKO5ueBy5Dzjrhk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Kontaken Na Kami</h2>
+            <p>Adda kayat mo nga ibingay nga istorya? Makibingay ka kadakami babaen kadaytuy:
+                <strong>damdamagkarruba@gmail.com</strong>.
+            </p>
+            <!-- Contact Form -->
+            <form action="mailto:damdamagkarruba@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nagan Mo</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Adres Mo</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Ibagam ti kayat mo nga ibingay</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light">I-email na kami</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Damdamag Karruba. Amin a karbengan ket nailasin.</p>
+    </footer>
+
+    <!-- Add JavaScript at the bottom of your page -->
+    <script>
+        function toggleDescription(editorialId) {
+            var fullText = document.getElementById(editorialId + '-full-text');
+            var button = document.querySelector('#' + editorialId + ' button');
+
+            if (fullText.classList.contains('d-none')) {
+                fullText.classList.remove('d-none');
+                button.textContent = 'Itulod Ti Ubbog'; // Change button text to "Read Less"
+            } else {
+                fullText.classList.add('d-none');
+                button.textContent = 'Basaen Ti Adu'; // Change button text to "Read More"
+            }
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();  // Prevents the form from submitting the traditional way
+
+            // Show success SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Mensahe naipatuloy!',
+                text: 'Agtultuloy a masarakan ti mensahe mo.',
+                confirmButtonText: 'Okay'
+            }).then(() => {
+                // Clear the form after submission
+                document.getElementById('contact-form').reset();
+            });
+        }
+
+        // Function to update the current date and time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            const dateTimeString = now.toLocaleDateString('en-US', options);
+            document.getElementById('current-time').innerText = 'Aldaw ken Oras: ' + dateTimeString;
+        }
+
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.9/dist/sweetalert2.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

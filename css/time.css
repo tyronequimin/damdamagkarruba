@@ -1,0 +1,49 @@
+ /* Style for the date/time section */
+ #current-time {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+    margin-top: 20px;
+}
+
+/* Adding animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling the time to make it pop */
+#current-time span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+/* Animation for pulsing effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #ff6a00;
+    }
+
+    100% {
+        transform: scale(1.2);
+        color: #ffffff;
+    }
+}

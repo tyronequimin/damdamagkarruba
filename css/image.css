@@ -1,0 +1,59 @@
+/* Container for images */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow the images to wrap on smaller screens */
+    gap: 20px; /* Adds space between images */
+    margin-top: 20px;
+    text-align: center; /* Center images on small screens */
+  }
+  
+  /* Styling for images */
+  .image-container img {
+    width: 100%; /* Make the image take up 100% of the container's width */
+    max-width: 300px; /* Limit the width of images to 300px */
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .image-container img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+    opacity: 0.9; /* Slightly fade the image on hover */
+  }
+  
+  /* Fade-in animation for the main content */
+  main {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Styling for the navbar logo */
+  .navbar-brand img {
+    max-width: 150px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1); /* Slightly enlarge navbar logo on hover */
+  }
+  
+  /* Responsive image adjustments */
+  @media (max-width: 768px) {
+    .image-container {
+      justify-content: center; /* Center images when screen is smaller */
+    }
+  
+    .image-container img {
+      max-width: 90%; /* Allow images to scale down on smaller screens */
+    }
+  }
+  

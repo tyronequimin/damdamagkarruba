@@ -1,0 +1,263 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  color: #ffcb00;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcb00 !important;
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  border-bottom: 2px solid #ffcb00;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-item.active .nav-link {
+  color: #ffcb00 !important;
+  border-bottom: 2px solid #ffcb00;
+}
+
+/* Adjusting Navbar on Scroll */
+.navbar.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.navbar.sticky-top.scrolled {
+  background-color: #0056b3;
+}
+
+.navbar.sticky-top.scrolled .navbar-brand,
+.navbar.sticky-top.scrolled .nav-link {
+  color: #fff;
+}
+
+
+/* Media Query for Navbar on Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.25rem;
+    margin-right: 0;
+    padding: 0.5rem;
+  }
+}
+
+/* Header Design */
+.header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 5rem 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Breathing Animation */
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.animated-heading {
+  animation: breathe 3s ease-in-out infinite;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Optional Background Animation */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
+  animation: move-bg 8s linear infinite;
+  z-index: 1;
+}
+
+@keyframes move-bg {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+}
+
+.carousel-caption h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: yellow;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.carousel-caption {
+  margin-bottom: 20%;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h2 {
+    font-size: 2rem;
+    padding: 8px 12px;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+
+  .carousel-caption {
+    margin-bottom: 15%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 20%;
+  }
+}
+
+/* Animation for images */
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Fade-in animation for the main content */
+main {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Styling for the navbar logo */
+.navbar-brand img {
+  max-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
